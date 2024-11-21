@@ -16,6 +16,7 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
+    position: relative; /* Add this to position footer relative to the container */
 }
 
 h1 {
@@ -83,11 +84,15 @@ button:hover {
     margin: 0 5px;
 }
 
+/* Footer Styling */
 .footer {
+    position: absolute;  /* Position the footer absolutely */
+    right: 0;  /* Align it to the right side of the container */
+    bottom: -40px;  /* Move it down slightly from the bottom of the container */
     background-color: black;
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
+    width: 100%; /* Ensure it takes the full width */
 }
 
 .footer-wrapper {
