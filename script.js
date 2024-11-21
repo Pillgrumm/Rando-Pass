@@ -36,3 +36,17 @@ function copyPassword() {
     document.execCommand('copy');
     alert('Password copied to clipboard!');
 }
+
+function resetForm() {
+    // Reset password output
+    document.getElementById('password').value = '';
+
+    // Reset length to default
+    document.getElementById('length').value = 12;
+
+    // Reset checkboxes to default state
+    document.getElementById('include-lowercase').checked = true;
+    document.getElementById('include-uppercase').checked = true;
+    document.getElementById('include-numbers').checked = true;
+    document.getElementById('include-symbols').checked = true;
+}

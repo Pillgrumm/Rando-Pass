@@ -71,3 +71,14 @@ button {
 button:hover {
     background: #218838;
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttons button {
+    flex: 1;
+    margin: 0 5px;
+}
