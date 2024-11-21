@@ -7,6 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden; /* Prevent scrolling */
 }
 
 .container {
@@ -16,7 +17,9 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 300px;
     text-align: center;
-    position: relative; /* Add this to position footer relative to the container */
+    position: relative;
+    max-height: 80vh; /* Make sure the container does not exceed the height of the screen */
+    overflow-y: auto; /* Allows scrolling within the container if content is too tall */
 }
 
 h1 {
@@ -86,13 +89,13 @@ button:hover {
 
 /* Footer Styling */
 .footer {
-    position: absolute;  /* Position the footer absolutely */
-    right: 0;  /* Align it to the right side of the container */
-    bottom: -40px;  /* Move it down slightly from the bottom of the container */
+    position: fixed; /* Makes it fixed at the bottom */
+    right: 0;
+    bottom: 0; /* Sticks to the bottom */
     background-color: black;
     text-align: center;
     padding: 20px 0;
-    width: 100%; /* Ensure it takes the full width */
+    width: 100%; /* Footer will take the full width of the screen */
 }
 
 .footer-wrapper {
@@ -110,7 +113,6 @@ button:hover {
 
 .footer-icon:hover {
     color: #81c784;
-    /* Adjust the hover color if needed */
 }
 
 .footer-icon i {
