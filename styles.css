@@ -82,3 +82,32 @@ button:hover {
     flex: 1;
     margin: 0 5px;
 }
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-icon {
+    color: aliceblue;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+    color: #81c784;
+    /* Adjust the hover color if needed */
+}
+
+.footer-icon i {
+    font-size: 2rem;
+}
